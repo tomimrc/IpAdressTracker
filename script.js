@@ -81,7 +81,6 @@ const buscar = async (e) => {
                         maxZoom: 250,
                     }).addTo(map);
                     var marker = L.marker([location.lat, location.lng]).addTo(map);
-                    
                 }            
     }} catch (error) {
         console.log(error);
