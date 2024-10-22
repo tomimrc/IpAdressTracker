@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(36, 35, 35);
+}
+
+
+.main{
+    width: 80%;
+    height: 70%;
+} 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top:30px ;
+    align-items: center;
+    background-image: url("./images/pattern-bg-desktop.png");
+    background-size: cover;
+    height: 40%;
+    position: relative;
+}
+
+.header h1{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.inputContainer{
+    display: flex;
+    height: 40px;
+}
+
+input{
+    height: 50%;
+    width: 400px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+.btn{
+    height: 100%;
+    width: 40px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px; 
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(51, 49, 49);
+}
+
+.resultsContainer{
+    display: flex;
+    height: 160px;
+    justify-content: space-around;
+    align-items: start;
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    position: absolute;
+    align-self: center;
+    bottom: -20%;
+    padding: 20px;
+    z-index: 10;
+}
+
+.resultDiv{
+    padding: 10px;
+    padding-top:0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    align-items: start;
+    z-index: 10;
+    
+}
+.resultDiv p{
+    font-size: smaller;
+    color: rgb(133, 129, 129);
+}
+.resultDiv strong{
+    font-weight: 700;
+}
+.location{
+    border-left:  1px solid rgb(216, 212, 212);
+    border-right:  1px solid rgb(216, 212, 212);
+}
+.timezone{
+    border-right:  1px solid rgb(216, 212, 212);
+    
+}
+.mapDiv{
+    height: 100%;
+    z-index: 0;
+}
+#map { height: 600px; z-index: 0; }
